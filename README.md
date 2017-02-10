@@ -6,6 +6,7 @@ information needed for best preparation in case of incoming IT interview.
 # Topics
 
 * [Java](Questions/Java/README.md)
+* [JavaScript](Questions/JavaScript/README.md)
 
 # Contribute
 
