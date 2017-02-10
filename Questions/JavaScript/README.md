@@ -6,7 +6,7 @@ This file is a part of bigger set of [IT Interview Questions](../../README.md)
 
 # Questions
 
-#### What is a prototype in JavaScript
+#### :exclamation: What is a prototype in JavaScript :exclamation:
 
 * prototype is an object that defines properties for other objects inheriting it
 * example of basic usage:

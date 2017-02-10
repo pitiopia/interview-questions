@@ -6,13 +6,13 @@ This file is a part of bigger set of [IT Interview Questions](../../README.md)
 
 # Questions
 
-#### Define HashMap in Java
+#### :exclamation: Define HashMap in Java :exclamation:
 
 HashMap is a data structure that stores key/value pairs.
 It gives the ability to add new data and search the collection by particular key in constant time.
 On the other hand it does not preserve the order of added data.
 
-#### What is the difference between HashMap and Hashtable
+#### :exclamation: What is the difference between HashMap and Hashtable :exclamation:
 
 In general HashMap is a newer version of HashTable with some differences:
 
@@ -23,7 +23,7 @@ slower (allows only operations by one thread at a time) | faster ( multiple thre
 doesn't allow null key nor null values | allows single null key and multiple null values
 implements Enumeration interface | implements Iterator interface
 
-#### What is the difference between ArrayList and Vector
+#### :exclamation: What is the difference between ArrayList and Vector :exclamation:
 
 We can say that ArrayList is for Vector the same as HashMap is for Hashtable:
 
@@ -39,7 +39,7 @@ implements Enumeration interface | implements Iterator interface
 * any modification of immutable object results in creating new object
 * String object is a good example of an immutable object
 
-#### What is the difference between local/instance/class variables?
+#### :exclamation: What is the difference between local/instance/class variables? :exclamation:
 
 Local variable:
 * defined inside a method
@@ -69,7 +69,7 @@ float/double | 0.0
 char | '\u0000' NUL
 object | null
 
-#### What are access modifiers?
+#### :exclamation: What are access modifiers? :exclamation:
 
 Access modifiers define the accessibility of a given method or class property for a potential caller.
 We have 4 different access modifiers in Java (sorted by their accessibility descending):
@@ -78,15 +78,16 @@ We have 4 different access modifiers in Java (sorted by their accessibility desc
 * `protected` - it is accessible from the class and all its subclasses
 * `private` - it is accessible only by the main class
 
-#### What is `finalize()` method for?
+#### :exclamation: What is `finalize()` method for? :exclamation:
 
 `finalize()` is a method that can be implemented in any class. Its job is to run additional code just before the destruction of the object.
 It can (but not have to) be called before the object is being destroyed. It all depends if the garbage collector tries to collect this object or not.
 
-#### Describe the life cycle of a JSP page
+#### :exclamation: Describe the life cycle of a JSP page :exclamation:
 
 JSP life cycle is similar to the servlet life cycle:
-1. Compilation
+
+1 Compilation
 
 Every time a request is being send for a particular JSP page,  JSP engine verifies if there is a need to compile this page.
 It is necessary if the page was never compiled before or the compiled version of the page is not up to date with the source.
@@ -94,12 +95,12 @@ It is necessary if the page was never compiled before or the compiled version of
 Compilation starts from parsing the JSP page. Each type of data in the page is being translated differently.
 As a result we receive new servlet for a given JSP page.
 
-2. Initialization
+2 Initialization
 
 Before starting to manage the request, JSP engine invokes `jspInit()` method. You can override it to initialize 
 any additional resources like database connections.
 
-3. Execution
+3 Execution
 
 During this step JSP engine invokes `_jspService()` method which is responsible for managing received request
 and returning proper response. 
@@ -111,12 +112,12 @@ void _jspService(HttpServletRequest request, HttpServletResponse response)
 }
 ```
 
-4. Finalization
+4 Finalization
 
 After the servlet has been executed, container invokes the `jspDestroy()` method to remove the servlet from it.
 It is possible to override this method to perform any additional cleanup actions.
 
-#### Describe `try` statement
+#### :exclamation: Describe `try` statement :exclamation:
 
 In general its syntax looks like this:
 
@@ -148,7 +149,7 @@ try {
 * `finally` clause is executed every time when the try-catch statement is executed
 * at least one of `catch` and `finally` clause is required in every `try` statement (can be both)
 
-#### What is garbage collector and how to initialize it?
+#### :exclamation: What is garbage collector and how to initialize it? :exclamation:
 
 * it is a process which looks for objects that became unreachable in the program
 * found objects are being removed from the memory heap
