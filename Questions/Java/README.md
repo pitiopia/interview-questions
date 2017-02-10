@@ -6,13 +6,13 @@ This file is a part of bigger set of [IT Interview Questions](../../README.md)
 
 # Questions
 
-#### :exclamation: Define HashMap in Java :exclamation:
+#### :bangbang: Define HashMap in Java :bangbang:
 
 HashMap is a data structure that stores key/value pairs.
 It gives the ability to add new data and search the collection by particular key in constant time.
 On the other hand it does not preserve the order of added data.
 
-#### :exclamation: What is the difference between HashMap and Hashtable :exclamation:
+#### :bangbang: What is the difference between HashMap and Hashtable :bangbang:
 
 In general HashMap is a newer version of HashTable with some differences:
 
@@ -23,7 +23,7 @@ slower (allows only operations by one thread at a time) | faster ( multiple thre
 doesn't allow null key nor null values | allows single null key and multiple null values
 implements Enumeration interface | implements Iterator interface
 
-#### :exclamation: What is the difference between ArrayList and Vector :exclamation:
+#### :bangbang: What is the difference between ArrayList and Vector :bangbang:
 
 We can say that ArrayList is for Vector the same as HashMap is for Hashtable:
 
@@ -33,13 +33,13 @@ thread safe (synchronized) | non thread safe (not synchronized)
 slower (allows only operations by one thread at a time) | faster ( multiple threads can operate on it at the same time )
 implements Enumeration interface | implements Iterator interface
 
-#### What is an immutable object?
+#### :bangbang: What is an immutable object? :bangbang:
 
 * object that can't be modified once created
 * any modification of immutable object results in creating new object
 * String object is a good example of an immutable object
 
-#### :exclamation: What is the difference between local/instance/class variables? :exclamation:
+#### :bangbang: What is the difference between local/instance/class variables? :bangbang:
 
 Local variable:
 * defined inside a method
@@ -69,7 +69,7 @@ float/double | 0.0
 char | '\u0000' NUL
 object | null
 
-#### :exclamation: What are access modifiers? :exclamation:
+#### :bangbang: What are access modifiers? :bangbang:
 
 Access modifiers define the accessibility of a given method or class property for a potential caller.
 We have 4 different access modifiers in Java (sorted by their accessibility descending):
@@ -78,12 +78,12 @@ We have 4 different access modifiers in Java (sorted by their accessibility desc
 * `protected` - it is accessible from the class and all its subclasses
 * `private` - it is accessible only by the main class
 
-#### :exclamation: What is `finalize()` method for? :exclamation:
+#### :bangbang: What is `finalize()` method for? :bangbang:
 
 `finalize()` is a method that can be implemented in any class. Its job is to run additional code just before the destruction of the object.
 It can (but not have to) be called before the object is being destroyed. It all depends if the garbage collector tries to collect this object or not.
 
-#### :exclamation: Describe the life cycle of a JSP page :exclamation:
+#### :bangbang: Describe the life cycle of a JSP page :bangbang:
 
 JSP life cycle is similar to the servlet life cycle:
 
@@ -117,7 +117,7 @@ void _jspService(HttpServletRequest request, HttpServletResponse response)
 After the servlet has been executed, container invokes the `jspDestroy()` method to remove the servlet from it.
 It is possible to override this method to perform any additional cleanup actions.
 
-#### :exclamation: Describe `try` statement :exclamation:
+#### :bangbang: Describe `try` statement :bangbang:
 
 In general its syntax looks like this:
 
@@ -149,7 +149,7 @@ try {
 * `finally` clause is executed every time when the try-catch statement is executed
 * at least one of `catch` and `finally` clause is required in every `try` statement (can be both)
 
-#### :exclamation: What is garbage collector and how to initialize it? :exclamation:
+#### :bangbang: What is garbage collector and how to initialize it? :bangbang:
 
 * it is a process which looks for objects that became unreachable in the program
 * found objects are being removed from the memory heap
