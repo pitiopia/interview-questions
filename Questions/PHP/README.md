@@ -10,6 +10,7 @@ This file is a part of bigger set of [IT Interview Questions](../../README.md)
 
 There are much more changes in PHP 7 than only five. As always there are some removals of old deprecated code, as well as 
 introduction to new useful functions. It is recommended to remember at least 5 of them:
+
 1. Some deprecated features have been removed:
     * all alternative tags like `<script language="php">...</script>` and ASP syntax `<% ... %>` and `<%=$var; %>`
     * all POSIX-compatible methods like `ereg()`, `eregi()`, `split()`, `ereg_replace()` and other - now you should use `preg_` family of functions
